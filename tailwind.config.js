@@ -1,12 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       fontFamily: {
-        rubik: ["Rubik", "sans-serif"],
+        rubik: ['Rubik', 'sans-serif']
       },
-    },
+      colors: {
+        'dark-gray': 'hsl(0, 0%, 59%)',
+        'very-dark-gray': 'hsl(0, 0%, 17%)'
+      }
+    }
   },
-  plugins: [],
-};
+  plugins: []
+}
