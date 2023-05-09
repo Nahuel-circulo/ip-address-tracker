@@ -9,8 +9,12 @@ export default {
       colors: {
         'dark-gray': 'hsl(0, 0%, 59%)',
         'very-dark-gray': 'hsl(0, 0%, 17%)'
+      },
+      backgroundImage: {
+        'hero-mobile': "url('/images/pattern-bg-mobile.png')",
+        'hero-desktop': "url('/images/pattern-bg-desktop.png')"
       }
-    }
-  },
-  plugins: []
+    },
+    plugins: []
+  }
 }
