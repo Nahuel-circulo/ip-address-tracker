@@ -3,7 +3,7 @@ import { MapContainer, Marker, TileLayer } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css';
 import ArrowIcon from '/images/icon-arrow.svg';
 import { useFetch } from './hooks/useFetch';
-import { LatLng } from 'leaflet';
+
 
 export interface Location {
   ip: string;
