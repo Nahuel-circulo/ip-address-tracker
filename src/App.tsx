@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { MapContainer, Marker, TileLayer } from 'react-leaflet'
+import { icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import ArrowIcon from '/images/icon-arrow.svg';
+import LocationIcon from '/images/icon-location.svg';
 import { useFetch } from './hooks/useFetch';
 
 
@@ -40,6 +42,9 @@ export interface Proxy {
 }
 
 
+const myIcon = icon({
+  iconUrl: LocationIcon,
+})
 function App() {
 
 
@@ -106,7 +111,7 @@ function App() {
               attribution=''
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker position={[data.location.lat, data.location.lng]}>
+            <Marker icon={ myIcon} position={[data.location.lat, data.location.lng]}>
 
             </Marker>
           </MapContainer>
